@@ -55,7 +55,7 @@ jobs:
         with:
           test-name: task5_test
           setup-command: 'cmake -B ./build && cmake --build ./build --target task5_test'
-          command: 'cd ./build && ./task5_test
+          command: 'cd ./build && ./task5_test'
           timeout: 10
           max-score: 1
       - name: Autograding Reporter
