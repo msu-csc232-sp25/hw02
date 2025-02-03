@@ -6,7 +6,7 @@ Dynamic programming is a technique that can dramatically improve runtime perform
 
 Before proceeding with this lab, the student should take the time to read
 
-* "Simplifying Dynamic Programming" article (accessible via Brightspace > CSC232-A > Handouts)
+* [Simplifying Dynamic Programming](sdp.pdf) article (also accessible via Brightspace > CSC232-A > Handouts)
 * [Chapter 5 Recursion: The Mirrors](https://msu.vitalsource.com/reader/books/9780138122782/epubcfi/6/124%5B%3Bvnd.vst.idref%3DP70010183410000000000000000017C9%5D!/4/2%5BP70010183410000000000000000017C9%5D/2/2%5BP70010183410000000000000000017CA%5D/7:0%5B%2C%20Re%5D)
 * [Chapter 6 Recursion as a Problem-Solving Technique](https://msu.vitalsource.com/reader/books/9780138122782/epubcfi/6/140%5B%3Bvnd.vst.idref%3DP7001018341000000000000000001BD2%5D!/4/2%5BP7001018341000000000000000001BD2%5D/2/2%5BP7001018341000000000000000001BD3%5D/7:0%5B%2CRec%5D)
 
