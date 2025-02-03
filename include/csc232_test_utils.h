@@ -140,7 +140,8 @@ namespace csc232 {
             return false;
         }
 
-        virtual bool isMethodDeclaredInClass(const std::string& filePath, const std::string& namespaceName, const std::string& className, const std::string& methodName) {
+        virtual bool isMethodDeclaredInClass(const std::string &filePath, const std::string &namespaceName,
+                                             const std::string &className, const std::string &methodName) {
             std::ifstream file(filePath);
             if (!file.is_open()) {
                 std::cerr << "Unable to open file\n";

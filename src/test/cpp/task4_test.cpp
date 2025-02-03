@@ -33,6 +33,12 @@ namespace csc232 {
 
 #else
     // TODO: Add unit tests as needed for task 4
+    TEST_F(Task4TestFixture, ItComputesProperlyWithSixElementBoard)
+    {
+        constexpr int board[] = {0, 5, 75, 7, 43, 11};
+        constexpr int expected{23};
+        const int actual{jump_it(board, 0, 6)};
+        EXPECT_EQ(expected, actual);
+    }
 #endif
-
 } // end namespace csc232

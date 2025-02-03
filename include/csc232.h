@@ -64,33 +64,16 @@ using std::setw;
  */
 namespace csc232 {
     // Add any user-defined functions prescribed in your assignment below
+    inline int cachedCosts[] = {0, 0, 0, 0, 0, 0};
 
-    // DO NOT Modify anything below this line
+    // Add any user-defined functions prescribed in your assignment below
 
-    int preamble(int argc, char *argv[]);
+    inline int jump_it(const int board[], const int start, const int size) {
+        return 0;
+    }
 
-    /**
-     * @brief Generate a quasi-random UUID.
-     * @return A string representation of a quasi-random UUID.
-     */
-    std::string generate_uuid() {
-        static std::random_device random_device;
-        static std::mt19937 random_number_generator(random_device());
-
-        std::uniform_int_distribution<int> dist(0, 15);
-
-        const char *uuid_alphabet = "0123456789abcdef";
-        const bool dash[] = {false, false, false, false, true, false, true, false,
-                             true, false, true, false, false, false, false, false};
-
-        std::string uuid;
-        for (bool dash_location: dash) {
-            if (dash_location)
-                uuid += "-";
-            uuid += uuid_alphabet[dist(random_number_generator)];
-            uuid += uuid_alphabet[dist(random_number_generator)];
-        }
-        return uuid;
+    inline int optimized_jump_it(const int board[], int size) {
+        return 0;
     }
 } // namespace csc232
 

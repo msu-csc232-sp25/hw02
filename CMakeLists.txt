@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16.3)
-set(IS_HW FALSE)
+set(IS_HW TRUE)
 set(CSC232_PROJECT_TYPE "lab")
 if(IS_HW)
     set(CSC232_PROJECT_TYPE "hw")
