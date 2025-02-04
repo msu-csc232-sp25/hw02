@@ -19,7 +19,7 @@
 
 #define EXECUTE_PREAMBLE TRUE
 
-#define TEST_TASK1 FALSE
+#define TEST_TASK1 TRUE
 #define TEST_TASK2 FALSE
 #define TEST_TASK3 FALSE
 #define TEST_TASK4 FALSE
@@ -69,6 +69,9 @@ namespace csc232 {
     // Add any user-defined functions prescribed in your assignment below
 
     inline int jump_it(const int board[], const int start, const int size) {
+        if (size == 1) 
+            return board[0];
+
         return 0;
     }
 
