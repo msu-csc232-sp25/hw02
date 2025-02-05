@@ -21,7 +21,7 @@
 
 #define TEST_TASK1 TRUE
 #define TEST_TASK2 TRUE
-#define TEST_TASK3 FALSE
+#define TEST_TASK3 TRUE
 #define TEST_TASK4 FALSE
 #define TEST_TASK5 FALSE
 
@@ -71,10 +71,17 @@ namespace csc232 {
     inline int jump_it(const int board[], const int start, const int size) {
         if (size == 1) 
             return board[0];
-        if (size == 2)
+        else if (size == 2)
             return board[0] + board[1];
+        else if (size == 3)
+            return board[0] + board[2];
+        else
+        {
+            int cost1 = jump_it(board, start+1, size-1);
+            int cost2 = jump_it(board, start+2, size-2);
+            return (cost1 < cost2)? cost1 : cost2;
+        }
 
-        return 0;
     }
 
     inline int optimized_jump_it(const int board[], int size) {
