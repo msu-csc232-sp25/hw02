@@ -23,7 +23,7 @@
 #define TEST_TASK2 TRUE
 #define TEST_TASK3 TRUE
 #define TEST_TASK4 TRUE
-#define TEST_TASK5 FALSE
+#define TEST_TASK5 TRUE
 
 #include <algorithm>
 #include <cassert>
@@ -85,7 +85,14 @@ namespace csc232 {
     }
 
     inline int optimized_jump_it(const int board[], int size) {
-        return 0;
+
+        cachedCosts[size-1] = board[size-1];
+        cachedCosts[size-2] = board[size-2];
+
+        for (int i = size-3; i >= 0; i-- ){
+            cachedCosts[i] = board[i] + std::min(cachedCosts[i+1], cachedCosts[i+2]);
+        }
+        return cachedCosts[0];
     }
 } // namespace csc232
 
